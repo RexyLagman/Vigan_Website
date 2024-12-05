@@ -1,0 +1,83 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                url('Assets/Vigan.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+}
+
+.NavigationBar {
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Ensures the navbar stays above other content */
+}
+
+.navitems {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around; /* Space between items */
+    align-items: center;
+    margin: 0;
+    padding: 50px 50px; /* Adds padding inside the navbar */
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7)); /* Darker background */
+}
+
+.navitems .navcontent a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Rubik', sans-serif;
+    font-weight: lighter;
+    padding: 10px 15px; /* Adds spacing around each link */
+    transition: color 0.3s, background-color 0.3s; /* Smooth hover effect */
+}
+
+.navitems .navcontent a:hover {
+    color: #ff9800; /* Highlight text on hover */
+    background-color: rgba(255, 255, 255, 0.2); /* Adds a slight background highlight */
+}
+
+
+.content-box {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background: rgba(0, 0, 0, 0.5); /* Transparent black background */
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 60%;
+    margin: auto;
+    margin-top: 100px; /* Push the box below the navbar */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Optional shadow for depth */
+}
+
+.profile-pic {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover; /* Ensures the image fits within the circular frame */
+    border: 3px solid white; /* Optional border around the image */
+}
+
+.biography {
+    flex: 1; /* Allows the text to take up remaining space */
+    font-family: 'Rubik', sans-serif;
+}
+
+.biography h2 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.biography p {
+    margin-top: 10px;
+    font-size: 16px;
+    line-height: 1.5;
+}
